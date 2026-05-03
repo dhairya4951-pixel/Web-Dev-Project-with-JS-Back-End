@@ -20,6 +20,7 @@ backend/
 ├── app.py
 ├── requirements.txt
 └── README.md
+```
 Requirements
 Python 3.10+
 Flask
