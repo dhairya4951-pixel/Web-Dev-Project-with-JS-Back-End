@@ -1,6 +1,3 @@
-## Backend `README.md`
-
-```md
 # Backend - Web Dev Capstone with JS
 
 This repository contains the backend of a full-stack product management web application built using **Flask**.
@@ -21,42 +18,69 @@ backend/
 ├── requirements.txt
 └── README.md
 ```
-Requirements
-Python 3.10+
-Flask
-flask-cors
-How to Install requirements.txt
+
+## Requirements
+
+- Python 3.10+
+- Flask
+- flask-cors
+
+## How to Install requirements.txt
 
 Open a terminal in the backend folder and run:
 
+```bash
 pip install -r requirements.txt
+```
 
 If requirements.txt does not exist yet, create it with:
 
+```bash
 pip freeze > requirements.txt
-How to Run the Backend
+```
+
+## How to Run the Backend
+
 Open a terminal in the backend folder.
+
 Create and activate a virtual environment:
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
 On Windows:
 
+```bash
 venv\Scripts\activate
+```
+
 Install the required packages:
+
+```bash
 pip install -r requirements.txt
+```
+
 Start the Flask server:
+
+```bash
 python app.py
-API Endpoints
-GET /products
+```
+
+## API Endpoints
+
+### GET /products
 
 Returns the list of all products.
 
-POST /products
+### POST /products
 
 Adds a new product.
 
-Example JSON body
+Example JSON body:
+
+```json
 {
   "name": "Keyboard",
   "price": 2500,
@@ -64,14 +88,18 @@ Example JSON body
   "description": "Mechanical keyboard",
   "stock": 10
 }
-Notes
-Data is stored in memory, so it resets when the server restarts.
-The frontend connects to this backend using the Fetch API.
-Make sure this backend is running before opening the frontend.
-Frontend Repository
+```
+
+## Notes
+
+- Data is stored in memory, so it resets when the server restarts.
+- The frontend connects to this backend using the Fetch API.
+- Make sure this backend is running before opening the frontend.
+
+## Frontend Repository
 
 https://github.com/dhairya4951-pixel/Web-Dev-Project-with-JS-Front-End.git
 
-Author
+## Author
 
 Sarthak
